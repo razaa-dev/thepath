@@ -1,0 +1,118 @@
+.title {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: nowrap; /* Ensure everything stays in one line */
+    overflow-x: auto; /* Add horizontal scroll if content overflows */
+    padding-bottom: 10px; /* Add some padding for scrollbar */
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.3s ease; /* Smooth scaling transition */
+
+      &:hover {
+        transform: scale(1.2); /* Scale up by 20% on hover */
+      }
+    }
+  }
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 18px;
+  }
+  
+  .title h1 {
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .title p {
+    color: grey;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .plane {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .plane img {
+    position: absolute;
+  }
+  
+  .plane:nth-of-type(1) {
+    filter: brightness(0.7);
+  }
+  
+  .plane:nth-of-type(1) img:nth-of-type(1) {
+    left: 90%;
+    top: 70%;
+  }
+  
+  .plane:nth-of-type(1) img:nth-of-type(2) {
+    left: 5%;
+    top: 65%;
+  }
+  
+  .plane:nth-of-type(1) img:nth-of-type(3) {
+    left: 35%;
+    top: 0%;
+  }
+  
+  .plane:nth-of-type(2) {
+    filter: brightness(0.6);
+  }
+  
+  .plane:nth-of-type(2) img:nth-of-type(1) {
+    left: 5%;
+    top: 10%;
+  }
+  
+  .plane:nth-of-type(2) img:nth-of-type(2) {
+    left: 80%;
+    top: 5%;
+  }
+  
+  .plane:nth-of-type(2) img:nth-of-type(3) {
+    left: 60%;
+    top: 60%;
+  }
+  
+  .plane:nth-of-type(3) {
+    filter: brightness(0.5);
+  }
+  
+  .plane:nth-of-type(3) img:nth-of-type(1) {
+    left: 65%;
+    top: 2.5%;
+  }
+  
+  .plane:nth-of-type(3) img:nth-of-type(2) {
+    left: 40%;
+    top: 75%;
+  }
+  

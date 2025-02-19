@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    height: 100vh;
+    align-items: left;
+    justify-content: left;
+}
+
+.body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+    
+}
+
+.backendTitle {
+    font-size: 5rem;  /* Make the title large */
+    font-weight: bold;
+    text-align: right;  /* Align it to the left */
+    margin-bottom: 50px;  /* Add some space below the title */
+    margin-left: -500px;
+    color: #333;  /* You can customize the color as needed */
+  }
+  
